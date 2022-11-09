@@ -72,7 +72,7 @@ export default function Nav() {
           </Link>
         </div>
         <div className="flex items-center w-full justify-center text-[#ee212d] font-bold text-3xl">
-          <Link className="link mx-12 relative" href="/Menu">
+          <Link className="link mx-12 relative" href="/menu">
             Menu
           </Link>
           <a className="link mx-12 relative" href="#">
@@ -117,7 +117,7 @@ export default function Nav() {
             className="border-2 rounded-l-full  flex justify-end overflow-hidden static bg-white"
           >
             <div className="flex  min-w-[79vw] justify-between items-center mr-2 z-0">
-              <Link className="" href="/Menu">
+              <Link className="" href="/menu">
                 Menu
               </Link>
               <a href="">Deliver</a>
