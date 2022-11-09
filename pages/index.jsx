@@ -5,7 +5,7 @@ import Nav from '../components/Nav'
 
 export default function Home() {
   return (
-    <div className='h-screen w-screen'>
+    <div className='h-screen w-screen overflow-hidden'>
       <Nav />
       <main className='flex h-[90vh]'>
         <div className='w-1/2 my-auto  pl-[15%]'>
