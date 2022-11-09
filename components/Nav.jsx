@@ -7,12 +7,13 @@ export default function Nav() {
       {/* computer nav */}
       <div className="lg:flex hidden  px-[10%] mt-12">
         <div className="w-[20%]">
-          <Image
+          <a href="/"><Image
             src="/logo.png"
             alt="Picture of the author"
             width={150}
             height={1}
-          />
+          /></a>
+          
         </div>
         <div className="flex items-center w-full justify-center text-[#ee212d] font-bold text-xl">
           <a className="link mx-12 relative" href="menu">
