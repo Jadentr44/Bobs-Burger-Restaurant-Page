@@ -1,6 +1,6 @@
 const menuItems = {
-  burgers:["burger 1","burger 2","burger 3"],
-  sides:["side 1", "side 2", "side 3"],
-  drinks:["drink 1","drink 2","drink 3"]
+  burgers:["Original","Don't You Four Cheddar 'Bout Me","Sweet Home Avocado","Eggers Can't Be Cheesers","Gourdon Hamsy"],
+  sides:["Fries", "Side Salad", "Chips"],
+  drinks:["Soft Drink","Water","Beer"]
 }
 export default menuItems

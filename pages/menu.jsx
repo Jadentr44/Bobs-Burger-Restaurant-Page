@@ -5,23 +5,24 @@ export default function menu() {
   return (
     <div>
       <Nav />
-      <div className='flex mx-[10%]'>
+      <div className='flex mx-[10%] mt-8'>
       <div className='w-[20%] border-2 border-black'>
-        <h2 className='text-center text-4xl font-semibold'>Menu</h2>
-        <div className='text-center menu'>
+        <h2 className='text-center text-5xl font-semibold bg-[#ee212d]'>Menu</h2>
+        <div className='text-center menu bg-white'>
 
         
-        <h3 className='text-xl'>Burgers</h3>
+        <h3 className='text-3xl border-y-2 border-black'>Burgers</h3>
         {menuItems.burgers.map(e=>{
-          return <p>{e}</p>
+          return <p className='border-t-2 border-black py-2 hover:bg-gray-500 cursor-pointer'>{e}</p>
         })}
-        <h3 className='text-xl'>Sides</h3>
+        <p className='border-t-2 border-black py-2 hover:bg-gray-500 cursor-pointer'>Burger Of The Day</p>
+        <h3 className='text-3xl border-y-2 border-black'>Sides</h3>
         {menuItems.sides.map(e=>{
-          return <p>{e}</p>
+          return <p className='border-t-2 border-black py-2 hover:bg-gray-500 cursor-pointer'>{e}</p>
         })}
-        <h3 className='text-xl'>Drinks</h3>
+        <h3 className='text-3xl border-y-2 border-black'>Drinks</h3>
         {menuItems.drinks.map(e=>{
-          return <p>{e}</p>
+          return <p className='border-t-2 border-black py-2 hover:bg-gray-500 cursor-pointer'>{e}</p>
         })}
         
         </div>
