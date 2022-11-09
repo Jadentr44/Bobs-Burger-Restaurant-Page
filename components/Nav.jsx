@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import Image from "next/image";
 import {motion,useCycle} from 'framer-motion'
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
@@ -14,18 +14,22 @@ const Path = (props) => (
   />
 );
 
-const MenuButton = ({ onClick, isOpen }) => {
+const MenuButton = ({ onClick, isOpen,width }) => {
   return (
+    
+      
     <motion.button
-      className="menu-button"
+      
+      className="menu-button  rounded-full rounded-r-none"
       onClick={onClick}
       animate={isOpen ? "open" : "closed"}
+      
       initial={false}
     >
       <svg
         width="70"
         height="60"
-        style={{ margin: "4px 0 0 2px" }}
+        style={{ marginTop: "10px" }}
         viewBox="0 0 23 23"
       >
         <Path
@@ -50,12 +54,13 @@ const MenuButton = ({ onClick, isOpen }) => {
         />
       </svg>
     </motion.button>
+    
   );
 };
 
 export default function Nav() {
   const [isOpen, toggleDropdown] = useCycle(false, true);
-  
+  const [width,setWidth] = useState("5rem")
   return (
     <>
       {/* computer nav */}
@@ -96,16 +101,40 @@ export default function Nav() {
           </div>
         </div>
       </nav>
+    {/* phone nav */}
+      <nav className="lg:hidden block w-screen ">
+        <div className="absolute py-3">
+        <Link href="/"><Image
+            src="/logo.png"
+            alt="Picture of the author"
+            width={150}
+            height={1}
+          /></Link>
+        </div>
+     
+    <div className="absolute  right-0 top-0">
+    <motion.div
+    animate={{width:width}}
+    className="border-2 rounded-l-full  flex justify-end overflow-hidden static bg-white"
+    >
+      <div className="flex  min-w-[79vw] justify-between items-center mr-2 z-0">
+        <a className="" href="Menu">Menu</a>
+        <a href="">Deliver</a>
+        <a href="">BOTD</a>
+        <a href="">Meet the Team</a>
+        </div>
+       <MenuButton onClick={()=>{
+        toggleDropdown();
+        if(isOpen) setWidth("5rem")
+        if(!isOpen) setWidth("110vw")
+       }} isOpen={isOpen} width={width} />
+    </motion.div>
 
-      <div className="lg:hidden block">
-        
-    <div className="absolute right-5 top-5">
 
-       <MenuButton onClick={toggleDropdown} isOpen={isOpen} />
     </div>
         
     
-      </div>
+      </nav>
     </>
   );
 }
