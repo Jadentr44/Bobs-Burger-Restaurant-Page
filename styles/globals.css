@@ -37,3 +37,12 @@ a {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+/* menu */
+.menu p, .menu h3{
+  border-top: solid black 1px;
+  
+}
+.menu p:hover{
+  background-color:darkgoldenrod;
+}

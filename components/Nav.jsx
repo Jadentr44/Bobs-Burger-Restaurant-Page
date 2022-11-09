@@ -15,17 +15,17 @@ export default function Nav() {
           />
         </div>
         <div className="flex items-center w-full justify-center text-[#ee212d] font-bold text-xl">
-          <a className="link mx-12 relative" href="#">
+          <a className="link mx-12 relative" href="menu">
             Menu
           </a>
           <a className="link mx-12 relative" href="#">
-            Menu
+            Deliver
           </a>
           <a className="link mx-12 relative" href="#">
-            Menu
+            Burger of the Day
           </a>
           <a className="link mx-12 relative" href="#">
-            Menu
+            Meet the Team
           </a>
         </div>
         <div className="flex items-center w-[20%] justify-end text-[#ee212d]">
