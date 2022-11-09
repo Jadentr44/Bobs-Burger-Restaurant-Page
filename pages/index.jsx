@@ -12,20 +12,35 @@ export default function Home() {
         <div className='lg:w-1/2 lg:my-auto  lg:pl-[15%] lg:mx-0 mx-[10%]'>
           {/* <h1 className='text-7xl'>Bobs Burgers</h1> */}
           <Image 
+          className='lg:hidden block mx-auto'
       src="/logo.png"
       alt="Picture of the author"
       width={500}
       height={500}
     />
-          <h3 className='text-xl mt-4 ml-1 text-center lg:text-left'>Family run hamburger restaurant
+    <Image 
+          className='lg:block hidden '
+      src="/logo.png"
+      alt="Picture of the author"
+      width={750}
+      height={500}
+    />
+          <h3 className='text-xl mt-4 ml-1 text-center lg:text-left lg:text-5xl md:text-3xl'>Family run hamburger restaurant
           </h3>
         </div>
-        <div className='lg:w-1/2 flex justify-center items-center'><Image 
+        <div className='lg:w-1/2 flex justify-center items-center'><Image className='lg:hidden block'
       src="/family.png"
       alt="Picture of the author"
       width={500}
       height={500}
-    /></div>
+    />
+    <Image className='lg:block hidden'
+      src="/family.png"
+      alt="Picture of the author"
+      width={800}
+      height={500}
+    />
+    </div>
       </main>
      <footer className='lg:hidden  absolute bottom-0 right-5 flex text-[#ee212d]'>
      
