@@ -10,8 +10,8 @@ export default function Home() {
       <main className='flex h-[90vh]'>
         <div className='w-1/2 my-auto  pl-[15%]'>
           <h1 className='text-7xl'>Bobs Burgers</h1>
-          <p className='text-xl mt-4 ml-1'>Family run hamburger restaurant
-          </p>
+          <h3 className='text-xl mt-4 ml-1'>Family run hamburger restaurant
+          </h3>
         </div>
         <div className='w-1/2 flex justify-center items-center'><Image 
       src="/family.png"
@@ -20,7 +20,7 @@ export default function Home() {
       height={500}
     /></div>
       </main>
-      <footer className='absolute bottom-0'>footer</footer>
+     
     </div>
   )
 }

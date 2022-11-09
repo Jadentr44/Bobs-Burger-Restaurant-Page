@@ -14,7 +14,7 @@ export default function Nav() {
             height={1}
           />
         </div>
-        <div className="flex items-center w-full justify-center">
+        <div className="flex items-center w-full justify-center text-[#ee212d] font-bold text-xl">
           <a className="link mx-12 relative" href="#">
             Menu
           </a>
@@ -28,14 +28,14 @@ export default function Nav() {
             Menu
           </a>
         </div>
-        <div className="flex items-center w-[20%] justify-end">
-          <div className="border-2 border-black rounded-xl mx-2 hover:bg-yellow-200">
-            <a href="">
+        <div className="flex items-center w-[20%] justify-end text-[#ee212d]">
+          <div className="border-2 border-[#ee212d] rounded-xl mx-2 hover:bg-yellow-200">
+            <a href="https://www.facebook.com/BobsBurgers/">
               <FaFacebookF className="m-2" size={20} />
             </a>
           </div>
-          <div className="border-2 border-black mx-2 rounded-xl hover:bg-yellow-200">
-            <a href="">
+          <div className="border-2 border-[#ee212d] mx-2 rounded-xl hover:bg-yellow-200">
+            <a href="https://www.instagram.com/bobsburgersfox/?hl=en">
               <FaInstagram className="m-2" size={20} />
             </a>
           </div>
