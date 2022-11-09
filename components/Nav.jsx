@@ -6,7 +6,7 @@ export default function Nav() {
   return (
     <>
       {/* computer nav */}
-      <div className="lg:flex hidden  px-[10%] mt-12">
+      <nav className="lg:flex hidden  px-[10%] mt-12">
         <div className="w-[20%]">
           <Link href="/"><Image
             src="/logo.png"
@@ -17,7 +17,7 @@ export default function Nav() {
           
         </div>
         <div className="flex items-center w-full justify-center text-[#ee212d] font-bold text-xl">
-          <a className="link mx-12 relative" href="menu">
+          <a className="link mx-12 relative" href="Menu">
             Menu
           </a>
           <a className="link mx-12 relative" href="#">
@@ -42,7 +42,7 @@ export default function Nav() {
             </a>
           </div>
         </div>
-      </div>
+      </nav>
 
       <div className="lg:hidden block"></div>
     </>
