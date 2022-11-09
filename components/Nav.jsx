@@ -1,18 +1,19 @@
 import React from "react";
 import Image from "next/image";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import Link from 'next/link'
 export default function Nav() {
   return (
     <>
       {/* computer nav */}
       <div className="lg:flex hidden  px-[10%] mt-12">
         <div className="w-[20%]">
-          <a href="/"><Image
+          <Link href="/"><Image
             src="/logo.png"
             alt="Picture of the author"
             width={150}
             height={1}
-          /></a>
+          /></Link>
           
         </div>
         <div className="flex items-center w-full justify-center text-[#ee212d] font-bold text-xl">

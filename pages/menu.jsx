@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import Nav from '../components/Nav'
 import menuItems from '../components/menu'
-export default function menu() {
+export default function Menu() {
   const [selected,setSelected]= useState("Original")
   return (
     <div>
@@ -13,17 +13,17 @@ export default function menu() {
 
         
         <h3 className='text-3xl border-y-2 border-black'>Burgers</h3>
-        {menuItems.burgers.map(e=>{
-          return <p style={{background:selected==e?"#6B7280":""}} onClick={()=>setSelected(e)} className='border-t-2 border-black py-2 hover:bg-gray-500 cursor-pointer'>{e}</p>
+        {menuItems.burgers.map((e,i)=>{
+          return <p key={i} style={{background:selected==e?"#6B7280":""}} onClick={()=>setSelected(e)} className='border-t-2 border-black py-2 hover:bg-gray-500 cursor-pointer'>{e}</p>
         })}
         <p className='border-t-2 border-black py-2 hover:bg-gray-500 cursor-pointer'>Burger Of The Day</p>
         <h3 className='text-3xl border-y-2 border-black'>Sides</h3>
-        {menuItems.sides.map(e=>{
-          return <p style={{background:selected==e?"#6B7280":""}} onClick={()=>setSelected(e)} className='border-t-2 border-black py-2 hover:bg-gray-500 cursor-pointer'>{e}</p>
+        {menuItems.sides.map((e,i)=>{
+          return <p key={i} style={{background:selected==e?"#6B7280":""}} onClick={()=>setSelected(e)} className='border-t-2 border-black py-2 hover:bg-gray-500 cursor-pointer'>{e}</p>
         })}
         <h3 className='text-3xl border-y-2 border-black'>Drinks</h3>
-        {menuItems.drinks.map(e=>{
-          return <p style={{background:selected==e?"#6B7280":""}} onClick={()=>setSelected(e)} className='border-t-2 border-black py-2 hover:bg-gray-500 cursor-pointer'>{e}</p>
+        {menuItems.drinks.map((e,i)=>{
+          return <p key={i} style={{background:selected==e?"#6B7280":""}} onClick={()=>setSelected(e)} className='border-t-2 border-black py-2 hover:bg-gray-500 cursor-pointer'>{e}</p>
         })}
         
         </div>
